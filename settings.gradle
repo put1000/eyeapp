@@ -1,0 +1,28 @@
+pluginManagement {
+    repositories {
+        maven { name "Alibaba" ; url 'https://maven.aliyun.com/repository/public' }
+        maven { name "Bstek" ; url 'https://nexus.bsdn.org/content/groups/public/' }
+        maven { name "M2" ; url 'https://plugins.gradle.org/m2/' }
+        google()
+        mavenCentral()
+        gradlePluginPortal()
+    }
+}
+dependencyResolutionManagement {
+    repositoriesMode.set(RepositoriesMode.FAIL_ON_PROJECT_REPOS)
+    repositories {
+        mavenLocal()
+        mavenLocal()
+
+        maven { url 'https://maven.aliyun.com/repository/public/' }
+        maven { url 'https://maven.aliyun.com/repository/spring/'}
+        maven { url 'https://maven.aliyun.com/repository/google/'}
+        maven { url 'https://maven.aliyun.com/repository/gradle-plugin/'}
+        maven { url 'https://maven.aliyun.com/repository/spring-plugin/'}
+        maven { url 'https://maven.aliyun.com/repository/grails-core/'}
+        maven { url 'https://maven.aliyun.com/repository/apache-snapshots/'}
+        mavenCentral()
+    }
+}
+rootProject.name = "eyeapp"
+include ':app'
